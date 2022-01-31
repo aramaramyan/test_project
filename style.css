@@ -1,5 +1,14 @@
+:root {
+    --dark-grey: #404040;
+    --light-grey: #BFBFBF;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-grey);
 }
