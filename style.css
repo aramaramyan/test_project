@@ -13,6 +13,8 @@ body {
     background-color: var(--light-grey);
 }
 
+/* HEADER STYLE START */
+
 #header {
     display: flex;
     justify-content: space-between;
@@ -46,7 +48,7 @@ body {
 
 .heading_name h1,
 .heading_name h3,
-.navbar_header_li{
+.navbar_header_li {
     font-family: 'Tenor Sans', sans-serif;
 }
 
@@ -74,7 +76,8 @@ body {
     box-shadow: 0 30px 15px #404040;
 }
 
-.navbar_header_li a {
+.navbar_header_li a,
+.main_li a{
     color: black;
     font-size: 20px;
     text-decoration: none;
@@ -83,3 +86,47 @@ body {
 a:visited {
     color: black;
 }
+
+/* HEADER STYLE END */
+
+/* MAIN LEFT SECTION STYLE START */
+
+.main {
+    display: flex;
+    height: 70vh;
+}
+
+.main_left_side {
+    min-width: 40%;
+}
+
+.main_ul {
+    margin: 20px;
+    padding: 5px;
+    height: 100%;
+}
+
+.main_li {
+    height: 80px;
+    padding: 5% 0 0 33%;
+    list-style-type: none;
+    letter-spacing: 1px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 10px 10px #BFBFBF;
+    transition: 0.5s;
+}
+
+.main_li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 30px 15px #404040;
+}
+
+.main_left_side h3,
+.main_right_side h3 {
+    margin: 20px 0 20px 20px ;
+    font-size: 25px;
+    font-family: 'Tenor Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* MAIN LEFT SECTION STYLE END */
