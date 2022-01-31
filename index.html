@@ -8,30 +8,30 @@
   <title>Test Project</title>
 </head>
 <body>
-<header>
+<header id="header">
   <div class="logo_wrapper">
     <img src="./img/logo.png" alt="Logo">
   </div>
   <nav class="navbar_header">
     <ul class="navbar_header_ul">
-      <li class="navbar_header_li">Home</li>
-      <li class="navbar_header_li">Gallery</li>
-      <li class="navbar_header_li">Partners</li>
-      <li class="navbar_header_li">Order</li>
+      <li class="navbar_header_li"><a href="#header">Home</a></li>
+      <li class="navbar_header_li"><a href="#gallery">Gallery</a></li>
+      <li class="navbar_header_li"><a href="#partners">Partners</a></li>
+      <li class="navbar_header_li"><a href="#order">Order</a></li>
     </ul>
   </nav>
 </header>
 <main>
-  <section class="section1">
-    <div class="section1_left_side">
-      <ul class="section1_ul">
-        <li class="section1_li"><a href="https://barvikhagroup.ru/" target="_blank">BARVIKHA Lounge</a></li>
-        <li class="section1_li"><a href="https://myataofficial.com/" target="_blank">MYATA Lounge</a></li>
-        <li class="section1_li"><a href="https://hookahplace.ru/" target="_blank">HOOKAH Place</a></li>
-        <li class="section1_li"><a href="http://ilpittore.ru/" target="_blank">IL Pittore</a></li>
+  <section class="main">
+    <div id="partners" class="section1_left_side">
+      <ul class="main_ul">
+        <li class="main_li"><a href="https://barvikhagroup.ru/" target="_blank">BARVIKHA Lounge</a></li>
+        <li class="main_li"><a href="https://myataofficial.com/" target="_blank">MYATA Lounge</a></li>
+        <li class="main_li"><a href="https://hookahplace.ru/" target="_blank">HOOKAH Place</a></li>
+        <li class="main_li"><a href="http://ilpittore.ru/" target="_blank">IL Pittore</a></li>
       </ul>
     </div>
-    <div class="section1_right_side">
+    <div id="gallery" class="main_right_side">
       <article class="article">
         <div class="article_img_wrapper">
           <img src="./img/p1.jpeg" alt="Hookah Image">
@@ -64,7 +64,7 @@
       </article>
     </div>
   </section>
-  <section class="section2">
+  <section id="order" class="order_section">
     <form action="#" method="post" class="form_register">
       <label for="firstName">First Name</label>
       <input type="text" id="firstName" required>
@@ -76,11 +76,29 @@
       <input type="email" id="email" required>
       <label for="male">Male</label>
       <input type="radio" id="male" name="gender" checked>
-      <label for="female">Male</label>
+      <label for="female">Female</label>
       <input type="radio" id="female" name="gender" >
       <button type="submit" class="btn_submit">Submit</button>
     </form>
   </section>
+  <footer>
+    <div class="footer_left_side">
+      <ul class="footer_ul">
+        <li class="navbar_header_li"><a href="#header">Home</a></li>
+        <li class="navbar_header_li"><a href="#gallery">Gallery</a></li>
+        <li class="navbar_header_li"><a href="#partners">Partners</a></li>
+        <li class="navbar_header_li"><a href="#order">Order</a></li>
+      </ul>
+    </div>
+    <div class="footer_right_side">
+      <ol class="footer_ol">
+        <li class="footer_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, nisi.</li>
+        <li class="footer_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, nisi.</li>
+        <li class="footer_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, nisi.</li>
+        <li class="footer_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, nisi.</li>
+      </ol>
+    </div>
+  </footer>
 </main>
 </body>
 </html>
