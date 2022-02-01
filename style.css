@@ -48,7 +48,8 @@ body {
 
 .heading_name h1,
 .heading_name h3,
-.navbar_header_li {
+.navbar_header_li,
+ #order h3 {
     font-family: 'Tenor Sans', sans-serif;
 }
 
@@ -95,6 +96,11 @@ a:visited {
     display: flex;
     height: 85vh;
     overflow: hidden;
+    transition: 0.5s;
+}
+
+.main:hover {
+    box-shadow: 0 10px 30px #404040;
 }
 
 .main_left_side {
@@ -135,16 +141,8 @@ a:visited {
     transition: 0.5s;
 }
 
-#partners:hover {
-    box-shadow: 0 0 25px #404040;
-}
-
 #gallery {
     transition: 0.5s;
-}
-
-#gallery:hover {
-    box-shadow: 0 0 25px #404040;
 }
 
 .article_wrapper {
@@ -175,4 +173,86 @@ a:visited {
 .article_paragraph_wrapper p {
     font-size: 20px;
 }
+
 /* MAIN LEFT SECTION STYLE END */
+
+/* ORDER SECTION STYLE START */
+
+#order {
+    background: url("./img/smoke.png") no-repeat fixed;
+    transition: 0.5s;
+}
+
+#order:hover {
+    box-shadow: 0 -10px 30px #404040;
+}
+
+#order h3 {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 45%;
+    font-size: 25px;
+}
+
+.form_register {
+    width: 50%;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.name_input,
+.lastname_input,
+.password_input,
+.email_input,
+.gender_buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 20px auto;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 20px;
+}
+
+label {
+    line-height: 35px;
+}
+
+input {
+    width: 65%;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Tenor Sans', sans-serif;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--dark-grey);
+    outline: 0;
+}
+
+#male,
+#female {
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: auto 0;
+    font-size: 20px;
+}
+
+button.btn_submit {
+    display: block;
+    width: 25%;
+    height: 8%;
+    margin: 0 auto;
+    background: transparent;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+button.btn_submit:hover {
+    box-shadow: 0 8px 20px #404040;
+}
+
+/* ORDER SECTION STYLE END */
