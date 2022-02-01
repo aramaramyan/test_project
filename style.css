@@ -93,7 +93,7 @@ a:visited {
 
 .main {
     display: flex;
-    height: 400px;
+    height: 85vh;
     overflow: hidden;
 }
 
