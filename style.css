@@ -93,6 +93,7 @@ a:visited {
 
 .main {
     display: flex;
+    justify-content: space-evenly;
     height: 85vh;
     overflow: hidden;
     transition: 0.5s;
@@ -103,7 +104,7 @@ a:visited {
 }
 
 .main_left_side {
-    min-width: 40%;
+    min-width: 30%;
 }
 
 .main_ul {
@@ -130,10 +131,15 @@ a:visited {
 
 .main_left_side h3,
 .main_right_side h3 {
-    margin: 20px 0 20px 20px ;
+    width: 230px;
+    margin: 20px auto;
     font-size: 25px;
     font-family: 'Tenor Sans', sans-serif;
     letter-spacing: 2px;
+}
+
+.main_right_side h3 {
+    padding-left: 9%;
 }
 
 #partners {
@@ -141,6 +147,7 @@ a:visited {
 }
 
 #gallery {
+    width: 40%;
     transition: 0.5s;
 }
 
