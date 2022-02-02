@@ -188,4 +188,37 @@ function createOrder() {
 
 // ORDER SECTION END
 
-root.append(createHeader(), createMain(), createOrder());
+// FOOTER SECTION START
+
+function createFooter() {
+  const leftSide = newElement("aside", {class: "footer_left_side"}, [
+    newElement("ul", {class: "footer_ul"}, [
+      newElement("li", {class: "footer_ul_li"}, [
+        newElement("a", {href: "#header"}, ["HOME"])
+      ]),
+      newElement("li", {class: "footer_ul_li"}, [
+        newElement("a", {href: "#gallery"}, ["GALLERY"])
+      ]),
+      newElement("li", {class: "footer_ul_li"}, [
+        newElement("a", {href: "#partners"}, ["PARTNERS"])
+      ]),
+      newElement("li", {class: "footer_ul_li"}, [
+        newElement("a", {href: "#order"}, ["ORDER"])
+      ])
+    ])
+  ]);
+  const rightSide = newElement("aside", {class: "footer_right_side"}, [
+    newElement("ol", {class: "footer_ol"}, [
+      newElement("li", {class: "footer_ol_li"}, ["Lorem ipsum dolor sit amet."]),
+      newElement("li", {class: "footer_ol_li"}, ["Lorem ipsum dolor sit amet."]),
+      newElement("li", {class: "footer_ol_li"}, ["Lorem ipsum dolor sit amet."]),
+      newElement("li", {class: "footer_ol_li"}, ["Lorem ipsum dolor sit amet."])
+    ])
+  ]);
+
+  return newElement("footer", {}, [leftSide, rightSide]);
+}
+
+// FOOTER SECTION END
+
+root.append(createHeader(), createMain(), createOrder(), createFooter());
