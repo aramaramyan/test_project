@@ -135,8 +135,8 @@ function createGallery() {
         ])
       ]),
     ]);
+
+  return newElement("aside", {id: "gallery" class: "main_right_side"}, [h3, articleWrapper]);
 }
 
 // GALLERY SECTION END
-
-root.append(createHeader());
