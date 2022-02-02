@@ -81,4 +81,62 @@ function createPartners() {
 
 // PARTNERS SECTION END
 
-root.append(createHeader(),);
+// GALLERY SECTION START
+
+function createGallery() {
+  const h3 = newElement("h3", {}, ["GALLERY"]),
+    articleWrapper = newElement("div", {class: "article_wrapper"}, [
+      newElement("article", {class: "article"}, [
+        newElement("div", {class: "article_img_wrapper"}, [
+          newElement("img", {src: "./img/p4.jpeg", alt: "Hookah Image"}, [])
+        ]),
+        newElement("div", {class: "article_paragraph_wrapper"}, [
+          newElement("p", {}, ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores debitis, eos laboriosam minus nam obcaecati quaerat quam soluta ullam. Amet error recusandae saepe sed voluptatem? Enim quas rerum sapiente sed similique, tenetur. Dolore, labore maiores molestias officia pariatur saepe!"])
+        ])
+      ]),
+      newElement("article", {class: "article"}, [
+        newElement("div", {class: "article_img_wrapper"}, [
+          newElement("img", {src: "./img/p5.jpeg", alt: "Hookah Image"}, [])
+        ]),
+        newElement("div", {class: "article_paragraph_wrapper"}, [
+          newElement("p", {}, ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque cum cumque, cupiditate doloribus excepturi expedita fuga harum illo laboriosam magni minima mollitia natus nisi non optio provident quae reprehenderit suscipit tempora vel veniam vitae."])
+        ])
+      ]),
+      newElement("article", {class: "article"}, [
+        newElement("div", {class: "article_img_wrapper"}, [
+          newElement("img", {src: "./img/p6.jpeg", alt: "Hookah Image"}, [])
+        ]),
+        newElement("div", {class: "article_paragraph_wrapper"}, [
+          newElement("p", {}, ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto, distinctio, error exercitationem expedita harum impedit modi nobis possimus quaerat rem vel voluptatum. Architecto dolore est, iste laborum optio tempora."])
+        ])
+      ]),
+      newElement("article", {class: "article"}, [
+        newElement("div", {class: "article_img_wrapper"}, [
+          newElement("img", {src: "./img/p7.jpeg", alt: "Hookah Image"}, [])
+        ]),
+        newElement("div", {class: "article_paragraph_wrapper"}, [
+          newElement("p", {}, ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis consequuntur cupiditate delectus eligendi et eveniet id itaque iure iusto laboriosam magnam, molestiae nemo nesciunt non omnis optio quaerat quas quia quidem quos ratione sit tempora ut voluptas? Deserunt, numquam!"])
+        ])
+      ]),
+      newElement("article", {class: "article"}, [
+        newElement("div", {class: "article_img_wrapper"}, [
+          newElement("img", {src: "./img/p8.jpeg", alt: "Hookah Image"}, [])
+        ]),
+        newElement("div", {class: "article_paragraph_wrapper"}, [
+          newElement("p", {}, ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis dicta, dolor dolorum, ea harum illo ipsum magnam maxime pariatur quam quis quod rem similique temporibus vel vero? Beatae corporis distinctio nemo officiis, omnis quasi quisquam voluptate? Neque, optio perspiciatis."])
+        ])
+      ]),
+      newElement("article", {class: "article"}, [
+        newElement("div", {class: "article_img_wrapper"}, [
+          newElement("img", {src: "./img/p9.jpeg", alt: "Hookah Image"}, [])
+        ]),
+        newElement("div", {class: "article_paragraph_wrapper"}, [
+          newElement("p", {}, ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad assumenda beatae blanditiis consequuntur cum distinctio est ex, in incidunt ipsum, modi molestias neque omnis perferendis sint sit unde voluptatibus!"])
+        ])
+      ]),
+    ]);
+}
+
+// GALLERY SECTION END
+
+root.append(createHeader());
