@@ -45,4 +45,40 @@ function createHeader() {
 
 // HEADER SECTION END
 
-root.append(createHeader());
+// PARTNERS SECTION START
+
+function createPartners() {
+  const h3 = newElement("h3", {}, ["OUR PARTNERS"]),
+    mainUl = newElement("ul", {class:"main_ul"}, [
+      newElement("li", {class: "main_li"}, [
+        newElement("a", {href: "https://barvikhagroup.ru/", target: "_blank"}, ["BARVIKHA Lounge"])
+      ]),
+      newElement("li", {class: "main_li"}, [
+        newElement("a", {href: "https://myataofficial.com/", target: "_blank"}, ["MYATA Lounge"])
+      ]),
+      newElement("li", {class: "main_li"}, [
+        newElement("a", {href: "https://hookahplace.ru/", target: "_blank"}, ["HOOKAH Place"])
+      ]),
+      newElement("li", {class: "main_li"}, [
+        newElement("a", {href: "https://www.instagram.com/hookah_place__yerevan/", target: "_blank"}, ["HOOKAH Place Yerevan"])
+      ]),
+      newElement("li", {class: "main_li"}, [
+        newElement("a", {href: "http://ilpittore.ru/", target: "_blank"}, ["IL Pittore"])
+      ]),
+      newElement("li", {class: "main_li"}, [
+        newElement("a", {href: "https://www.facebook.com/LaPiazzaYerevanOfficial/", target: "_blank"}, ["La Piazza"])
+      ]),
+      newElement("li", {class: "main_li"}, [
+        newElement("a", {href: "https://absolem.pro/", target: "_blank"}, ["ABSOLEM.pro"])
+      ]),
+      newElement("li", {class: "main_li"}, [
+        newElement("a", {href: "https://www.borodabrothers.ru/", target: "_blank"}, ["BORODA Brothers"])
+      ]),
+    ]);
+
+  return newElement("aside", {id: "partners", class: "main_left_side"}, [h3, mainUl]);
+}
+
+// PARTNERS SECTION END
+
+root.append(createHeader(),);
