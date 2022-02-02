@@ -136,7 +136,17 @@ function createGallery() {
       ]),
     ]);
 
-  return newElement("aside", {id: "gallery" class: "main_right_side"}, [h3, articleWrapper]);
+  return newElement("aside", {id: "gallery", class: "main_right_side"}, [h3, articleWrapper]);
 }
 
 // GALLERY SECTION END
+
+// MAIN SECTION START
+
+function createMain() {
+  return newElement("section", {class: "main"}, [createPartners(), createGallery()]);
+}
+
+// MAIN SECTION END
+
+root.append(createHeader(), createMain());
