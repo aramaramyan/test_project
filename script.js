@@ -149,4 +149,43 @@ function createMain() {
 
 // MAIN SECTION END
 
-root.append(createHeader(), createMain());
+// ORDER SECTION START
+
+function createOrder() {
+  const h3 = newElement("h3", {}, ["Order Now"]),
+    nameInput = newElement("div", {class: "name_input"}, [
+      newElement("label", {for: "firstName"}, ["First Name"]),
+      newElement("input", {type: "text", id: "firstName", required: true}, [])
+    ]),
+    lastNameInput = newElement("div", {class: "lastname_input"}, [
+      newElement("label", {for: "lastName"}, ["Last Name"]),
+      newElement("input", {type: "text", id: "lastName", required: true}, [])
+    ]),
+    passwordInput = newElement("div", {class: "password_input"}, [
+      newElement("label", {for: "password"}, ["Password"]),
+      newElement("input", {type: "text", id: "password", required: true}, [])
+    ]),
+    emailInput = newElement("div", {class: "email_input"}, [
+      newElement("label", {for: "email"}, ["Email"]),
+      newElement("input", {type: "text", id: "email", required: true}, [])
+    ]),
+    genderButtons = newElement("div", {class: "gender_buttons"}, [
+      newElement("label", {for: "male"}, ["Male"]),
+      newElement("input", {type: "radio", id: "male", name: "gender", checked: true}, []),
+      newElement("label", {for: "female"}, ["Female"]),
+      newElement("input", {type: "radio", id: "female", name: "gender", checked: true}, []),
+    ]),
+    form = newElement("form", {action: "#", method:"post", class: "form_register"}, [
+      nameInput,
+      lastNameInput,
+      passwordInput,
+      emailInput,
+      genderButtons
+    ]);
+
+  return newElement("section",  {id: "order",  class: "order_section"}, [h3, form]);
+}
+
+// ORDER SECTION END
+
+root.append(createHeader(), createMain(), createOrder());
